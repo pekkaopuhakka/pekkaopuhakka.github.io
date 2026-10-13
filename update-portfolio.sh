@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-# Encrypts a new portfolio build with the custom landing page and writes it as index.html.
+# Encrypts a new portfolio build with the custom login page and writes it to portfolio/index.html.
+# The light front page (index.html at the root) carries the link-preview tags and forwards visitors there.
 #
 # Usage (from the repository folder):
 #   ./update-portfolio.sh ~/Downloads/portfolio-systems.html
@@ -24,7 +25,7 @@ trap 'rm -rf "$TMP"' EXIT
 cp "$SRC" "$TMP/index.html"
 
 npx --yes staticrypt@3.5.4 "$TMP/index.html" \
-  --directory . \
+  --directory portfolio \
   --template password_template.html \
   --template-title "Pekka Puhakka · Portfolio" \
   --template-instructions "This portfolio includes client work shared in confidence. Enter the password you received with the link." \
@@ -36,5 +37,5 @@ npx --yes staticrypt@3.5.4 "$TMP/index.html" \
   --template-toggle-hide "Hide"
 
 echo
-echo "Done: index.html is encrypted. Review, then commit and push:"
-echo "  git add index.html .staticrypt.json && git commit -m \"Portfolio update\" && git push"
+echo "Done: portfolio/index.html is encrypted. Review, then commit and push:"
+echo "  git add portfolio/index.html .staticrypt.json && git commit -m \"Portfolio update\" && git push"
