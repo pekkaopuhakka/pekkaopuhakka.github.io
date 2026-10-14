@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="staticrypt-html" lang="en">
 <head>
 <meta charset="utf-8">
 <title>Pekka Puhakka · Portfolio</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="googlebot" content="noindex, nofollow">
 <meta name="bingbot" content="noindex, nofollow">
 <meta name="description" content="Lead Product Designer at NoA Ignite. A password-protected portfolio.">
@@ -12,28 +12,165 @@
 <meta property="og:description" content="Lead Product Designer at NoA Ignite. A password-protected portfolio.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://pekkaopuhakka.github.io/">
-<meta property="og:site_name" content="Pekka Puhakka">
 <meta property="og:image" content="https://pekkaopuhakka.github.io/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="627">
 <meta property="og:image:alt" content="Pekka Puhakka, Lead Product Designer at NoA Ignite">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://pekkaopuhakka.github.io/og-image.png">
+<!-- do not cache this page -->
+<meta http-equiv="cache-control" content="max-age=0">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="expires" content="0">
+<meta http-equiv="pragma" content="no-cache">
 <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADMElEQVR4nMSXa0hTYRjH/+cyKM/UNW+bhre8lUlKF/xSERhigmUGEV2U6GJoifSpIgg0qU9BEVlEUBiECSkVmeX6FI0oE1JwtDJwzt2w6dbKwc7pPattTknP2Jy/LzvP8573ef6c8+w5z8tiFgpCTMyKZkEQSolZTFFUMiIAiWchP4Mkntbl+n3NTvCtUb4LlSqpgqbpu8SViiVFMPI8f8xksr7wC1Crk8spiu5FFOF5zy5RBBUfH7+K41YMEy1qRBXB6HT+KmKUSkU9eTf7EHWoWJmMNbEUhVIsE2JuVhCoUooKOLs6HyEzI2PRzVNT07DZbBgzjOHjwCf092tgsVoRCt7cqakqYbYzJSUF27dtxe6qKuTn5UoO5nQ60XblKvpevUYosHMdZrMZnY+7wLIsEdDk959uasY7rRYMwyA9PR3ZWVnIy81BTU01FPEKyOVytLW2gOM4POnugVRohIjH48Ho6Cj6NRrcun0HBw/Vwm7/ERDa0ACZTCY5XsgC5mK2WNDz9LnfjouLRUlJseT9YQsQ0eu/Btmr09IgFfZ/CzQlXRvDBN8rFmTYAniBh1TWFxYG2UPDw5AKizDZsnkT9lbv8dtiTzAaJyTvlywgN3cN3G633xabV0F+AepPngD5inp9DocDLa2XEQqSa+BMYyMWYkSnw/kLF2EYH0dEBMytgS96PaanHX5bLDQrab0Gwzg+DAxARwSQwQOhIvkJXL9x09sJI03YRRguEWlEC6FQAnmFAilUIfoCmi8BfZ9pdPQx6NZSyFkrRE/Aug3AgeOB8Ko0Gg3n5qdbshrIzpfmmycgMTEBO8vKUFlZEeSvqz2CpKQkaN5oyF/wJxbjm06aj5HLuVNkKJX7HB0P7qOivBwJSmXQjalqtXdSysrMlDT1WM2APE5A0ca/857ZKKDlLI9JW2D+I33DTKnVql7SVsuxDJC+9ZIWBH4Qy4SYm5Ql3U4u7Yg6Yk66nTaZTN/JuziK6FMn5mbEK1LVIxy38j0pxh3iiQVLivdwun9iwvJMtBif2+l06RlGdo8cl9zkicwQVywRxCEC/DuevyXxHrpcM4dttskh39ofAAAA//881HKVAAAABklEQVQDAB5sHKaeqyIGAAAAAElFTkSuQmCC">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTQiIGZpbGw9IiMxQTFBMTgiLz48cGF0aCB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1Ljc1IDUyLjAwKSBzY2FsZSgwLjAyOTMxIC0wLjAyOTMxKSIgZD0iTTEwMTAuNjQ3MjE1MTMxNjcwMiA5NjIuNDk1MjA2NjgwMTQ4OFExMDEwLjY0NzIxNTEzMTY3MDIgMTA0OC43MjEzMDg4MDEzMjMyIDk3Ny40MzgzODcwNjk4NTEyIDExMDguMDQwMjkyNzU2NjMyUTk0NC4yMjk1NTkwMDgwMzIxIDExNjcuMzU5Mjc2NzExOTQwOCA4NjcuMzA0NjQ3OTgzOTgzMiAxMTk3Ljc3MTA4MTQ2NjIyNzhRNzkwLjM3OTczNjk1OTkzNDIgMTIyOC4xODI4ODYyMjA1MTQ4IDY1Ny43MDUwNDI0NTE2MjAxIDEyMjguMTgyODg2MjIwNTE0OEgzMzkuNTI5MzUwMzczODk0TDMzMC4wNDgxNTIyOTc3MzUyIDEzNjQuNjY1MTYxMTMyODEyNUg3NDMuMTczNzQzODYyNjU4N1E5MzIuNTk1ODI4MjA1MzQ3MSAxMzY0LjY2NTE2MTEzMjgxMjUgMTA0Ny43NzY3OTY4ODg1NiAxMzEzLjcxNzE2MzA4NTkzNzVRMTE2Mi45NTc3NjU1NzE3NzMgMTI2Mi43NjkxNjUwMzkwNjI1IDEyMTUuMzEzNzc0MjQ0ODU5OCAxMTczLjU5Mjc4MjU1MzI4NTRRMTI2Ny42Njk3ODI5MTc5NDY2IDEwODQuNDE2NDAwMDY3NTA4MiAxMjY3LjY2OTc4MjkxNzk0NjYgOTY5Ljg5NzkzMzc2MjUyMDZRMTI2Ny42Njk3ODI5MTc5NDY2IDg1NS40OTQwMzg0NTE0NjMgMTIxNS4wMzMxNzMzOTcxODM0IDc2Mi40NTQxODI3NzE5NjU5UTExNjIuMzk2NTYzODc2NDIwMyA2NjkuNDE0MzI3MDkyNDY4NyAxMDQ5LjQwODUxNDIwMzUwMzcgNjE0Ljc2NTAyNjUzOTU2NDFROTM2LjQyMDQ2NDUzMDU4NzIgNTYwLjExNTcyNTk4NjY1OTUgNzU0LjY5OTQ0ODIyNDE1NzEgNTYwLjExNTcyNTk4NjY1OTVIMzI2Ljg2MjYxNjc1ODc5MzZMMzM5LjUyOTM1MDM3Mzg5NCA2OTUuMjQ2NTYxNTc5NDA2M0g3MzMuNjIyNDExNjMxMDQ3N1E4MTYuOTI2NzI2MDI0NTk3OSA2OTUuMjQ2NTYxNTc5NDA2MyA4NzkuMDQ3MjE1MDkxMDY0NiA3MjQuODQ2OTAzOTMxMzQ5NVE5NDEuMTY3NzA0MTU3NTMxMyA3NTQuNDQ3MjQ2MjgzMjkyOCA5NzUuOTA3NDU5NjQ0NjAwNyA4MTMuNzg4MDgwODI0NTM5MVExMDEwLjY0NzIxNTEzMTY3MDIgODczLjEyODkxNTM2NTc4NTQgMTAxMC42NDcyMTUxMzE2NzAyIDk2Mi40OTUyMDY2ODAxNDg4Wk01MDUuNTAwMzMyNzU3ODMwNiAxMzY0LjY2NTE2MTEzMjgxMjVWMTE3LjU2MzIxMzYzNTIzNjAyTDY2OS42MDE3Mzg5NDQ2NDk3IDY1LjU3OTQ3NDY2ODk0OTg0VjBIODYuNzY4MjMxMjgwMTQ4MDNWNjUuNTc5NDc0NjY4OTQ5ODRMMjUwLjg2OTYzNzQ2Njk2NzEgMTE3LjU2MzIxMzYzNTIzNjAyVjEyNDcuMTAxOTQ3NDk3NTc2NUw4Ni43NjgyMzEyODAxNDgwMyAxMjk5LjA4NTY4NjQ2Mzg2MjdWMTM2NC42NjUxNjExMzI4MTI1WiIgZmlsbD0iI0U2RTNERiIvPjxjaXJjbGUgY3g9IjUwLjUxIiBjeT0iNDYuODAiIHI9IjUuMiIgZmlsbD0iI0U0RkYxQSIvPjwvc3ZnPg==">
 <link rel="apple-touch-icon" sizes="180x180" href="data:image/png;base64,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">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..500;1,6..72,300..400&family=Geist:wght@400;500&display=swap" rel="stylesheet">
 <script>
-  // people go straight on to the portfolio; link-preview crawlers don't run scripts, so they stay on this light page
-  location.replace("portfolio/" + location.search + location.hash);
+  // follow the visitor's theme choice from the portfolio, otherwise the system setting
+  (function(){ try{ var t=localStorage.getItem('pp-theme'); if(t==='dark'||t==='light') document.documentElement.setAttribute('data-theme',t); }catch(e){} })();
 </script>
 <style>
-  html,body{height:100%;margin:0}
-  body{display:grid;place-items:center;background:#E6E3DF;color:#1A1A18;font:16px/1.5 ui-sans-serif,system-ui,-apple-system,sans-serif}
-  @media (prefers-color-scheme: dark){ body{background:#151614;color:#ECEAE5} }
-  a{color:inherit}
+:root{--paper:#E6E3DF; --ink:#1A1A18; --muted:#5F5C58; --rule:rgba(26,26,24,.22); --field:#F2F0ED; --hl:#E4FF1A; --err:#A3242B;
+  --serif:"Newsreader","Iowan Old Style","Palatino Linotype",Georgia,serif; --sans:"Geist",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){--paper:#151614; --ink:#ECEAE5; --muted:#A29F99; --rule:rgba(236,234,229,.24); --field:#1E1F1D; --err:#F08A8F} }
+:root[data-theme="dark"]{--paper:#151614; --ink:#ECEAE5; --muted:#A29F99; --rule:rgba(236,234,229,.24); --field:#1E1F1D; --err:#F08A8F}
+*,*::before,*::after{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0; background:var(--paper); color:var(--ink); font-family:var(--sans); -webkit-font-smoothing:antialiased;
+  padding:env(safe-area-inset-top,0px) env(safe-area-inset-right,0px) env(safe-area-inset-bottom,0px) env(safe-area-inset-left,0px)}
+.hidden{display:none!important}
+.staticrypt-spinner-container{height:100%; display:grid; place-items:center}
+.staticrypt-spinner{width:28px; height:28px; border:2px solid var(--rule); border-top-color:var(--ink); border-radius:50%; animation:spin .9s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.staticrypt-content{min-height:100%; display:grid; place-items:center; padding:clamp(1.5rem,6vw,4rem)}
+.card{width:100%; max-width:26rem}
+.mark{display:block; width:40px; height:40px; margin-bottom:2.2rem}
+.name{font-family:var(--serif); font-weight:400; font-size:clamp(2.6rem,9vw,3.6rem); line-height:1; letter-spacing:-.03em; margin:0}
+.role{font-family:var(--serif); font-size:1.25rem; color:var(--muted); margin:.5rem 0 0}
+.rule{height:1px; background:var(--ink); border:0; margin:2rem 0 1.4rem}
+.instructions{font-size:.9375rem; line-height:1.55; color:var(--muted); margin:0 0 1.2rem}
+label.field-label{display:block; font-size:.8125rem; color:var(--muted); margin:0 0 .4rem}
+.staticrypt-password-container{position:relative}
+#staticrypt-password{width:100%; font:inherit; font-size:1rem; color:var(--ink); background:var(--field); border:1px solid var(--rule); border-radius:.6rem; padding:.85rem 4.5rem .85rem .95rem; outline:none; transition:border-color .15s ease, box-shadow .15s ease}
+#staticrypt-password:focus{border-color:var(--ink); box-shadow:0 0 0 3px color-mix(in srgb, var(--ink) 12%, transparent)}
+#staticrypt-password[aria-invalid="true"]{border-color:var(--err)}
+.toggle{position:absolute; right:.5rem; top:50%; transform:translateY(-50%); font:inherit; font-size:.8125rem; color:var(--muted); background:transparent; border:0; padding:.35rem .5rem; border-radius:.4rem; cursor:pointer}
+.toggle:hover{color:var(--ink)} .toggle:focus-visible{outline:2px solid var(--ink); outline-offset:1px}
+.error{min-height:1.4rem; font-size:.8125rem; color:var(--err); margin:.45rem 0 .3rem}
+.staticrypt-remember{display:flex; align-items:center; gap:.55rem; font-size:.875rem; color:var(--ink); margin:0 0 1.3rem; cursor:pointer; user-select:none}
+.staticrypt-remember input{width:1rem; height:1rem; accent-color:var(--ink); margin:0}
+.staticrypt-decrypt-button{width:100%; font:inherit; font-size:.9375rem; font-weight:500; color:var(--paper); background:var(--ink); border:0; border-radius:999px; padding:.85rem 1.2rem; cursor:pointer; transition:opacity .15s ease}
+.staticrypt-decrypt-button:hover{opacity:.88} .staticrypt-decrypt-button:focus-visible{outline:2px solid var(--ink); outline-offset:3px}
+.staticrypt-decrypt-button[disabled]{opacity:.6; cursor:progress}
+.foot{margin-top:2.4rem; font-size:.8125rem; color:var(--muted)}
+.foot a{color:inherit}
+@media (prefers-reduced-motion: reduce){ .staticrypt-spinner{animation-duration:2.4s} }
 </style>
+<!-- GoatCounter: privacy-friendly visit counting, no cookies. Counted by hand below, so the campaign tag is read before it is removed. -->
+<script>window.goatcounter = { no_onload: true };</script>
+<script data-goatcounter="https://pekkaopuhakka.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
-<body>
-  <p><a href="portfolio/">Open Pekka Puhakka’s portfolio</a></p>
+<body class="staticrypt-body">
+  <div id="staticrypt_loading" class="staticrypt-spinner-container"><div class="staticrypt-spinner" role="status" aria-label="Loading"></div></div>
+
+  <div id="staticrypt_content" class="staticrypt-content hidden">
+    <main class="card staticrypt-form">
+      <svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="8" fill="var(--ink)"/><text x="12" y="29" font-family="Newsreader, Georgia, serif" font-size="25" fill="var(--paper)">P</text><circle cx="30" cy="27" r="3.2" fill="#E4FF1A"/></svg>
+      <h1 class="name">Pekka Puhakka</h1>
+      <p class="role">Lead Product Designer at NoA Ignite</p>
+      <hr class="rule">
+      <p class="instructions">This portfolio includes client work shared in confidence. Enter the password you received with the link.</p>
+      <form id="staticrypt-form" action="#" method="post" novalidate>
+        <label class="field-label" for="staticrypt-password">Password</label>
+        <div class="staticrypt-password-container">
+          <input id="staticrypt-password" type="password" name="password" autocomplete="current-password" aria-describedby="staticrypt-error" autofocus>
+          <button type="button" class="toggle" id="staticrypt-toggle" aria-controls="staticrypt-password">Show</button>
+        </div>
+        <p class="error" id="staticrypt-error" role="alert" aria-live="assertive"></p>
+        <label id="staticrypt-remember-label" class="staticrypt-remember hidden">
+          <input id="staticrypt-remember" type="checkbox" name="remember"> Remember me on this device
+        </label>
+        <input type="submit" class="staticrypt-decrypt-button" value="Open portfolio">
+      </form>
+      <p class="foot">No password? <a href="https://www.linkedin.com/in/pekkaopuhakka/" rel="noopener">Ask Pekka on LinkedIn.</a></p>
+    </main>
+  </div>
+
+<script>
+  // Front page: one password field for every lens. The password is turned into a key exactly as StatiCrypt does
+  // (PBKDF2, 600,000 rounds, shared salt), then compared with a small fingerprint per lens (HMAC-SHA-256 of a
+  // fixed label). On a match the visitor is forwarded to that lens with StatiCrypt's own auto-unlock link.
+  const enc = new TextEncoder();
+  const hex = (b) => Array.from(new Uint8Array(b)).map((x) => x.toString(16).padStart(2, "0")).join("");
+  const unhex = (h) => new Uint8Array(h.match(/../g).map((x) => parseInt(x, 16)));
+  async function pbkdf2(pass, salt, iterations, hash) {
+    const k = await crypto.subtle.importKey("raw", enc.encode(pass), "PBKDF2", false, ["deriveBits"]);
+    return hex(await crypto.subtle.deriveBits({ name: "PBKDF2", hash, iterations, salt: enc.encode(salt) }, k, 256));
+  }
+  async function deriveKey(password, salt) {
+    const r1 = await pbkdf2(password, salt, 1000, "SHA-1");
+    const r2 = await pbkdf2(r1, salt, 14000, "SHA-256");
+    return pbkdf2(r2, salt, 585000, "SHA-256");
+  }
+  async function fingerprint(key, lens) {
+    const k = await crypto.subtle.importKey("raw", unhex(key), { name: "HMAC", hash: "SHA-256" }, false, ["sign"]);
+    return hex(await crypto.subtle.sign("HMAC", k, enc.encode("lens:" + lens)));
+  }
+  async function lensFor(key, cfg) {
+    for (const lens of Object.keys(cfg.lenses)) if ((await fingerprint(key, lens)) === cfg.lenses[lens]) return lens;
+    return null;
+  }
+  const go = location.hash.length > 1 ? location.hash.substring(1) : "";
+  function open(lens, key, remember) {
+    location.replace(lens + "/#staticrypt_pwd=" + key + (remember ? "&remember_me" : "") + (go ? "&go=" + encodeURIComponent(go) : ""));
+  }
+  function showForm() {
+    document.getElementById("staticrypt_loading").classList.add("hidden");
+    document.getElementById("staticrypt_content").classList.remove("hidden");
+    document.getElementById("staticrypt-remember-label").classList.remove("hidden");
+    document.getElementById("staticrypt-password").focus();
+  }
+  // count the arrival (with its ?campaign= tag, if any), then take the tag out of the address so it never spreads
+  const TAGS = ["campaign", "utm_campaign", "utm_source", "utm_medium", "utm_content", "ref", "src", "source"];
+  function gcReady(ms) { return new Promise((res) => { const t0 = Date.now(); (function poll() {
+    if (window.goatcounter && window.goatcounter.count) return res(true); if (Date.now() - t0 > ms) return res(false); setTimeout(poll, 50); })(); }); }
+  const counted = (async () => {
+    if (await gcReady(2500)) { try { window.goatcounter.count({ path: "/" }); } catch (e) {} }
+    const u = new URL(location.href); let had = false; TAGS.forEach((k) => { if (u.searchParams.has(k)) { u.searchParams.delete(k); had = true; } });
+    if (had) history.replaceState(null, "", u.pathname + u.search + u.hash);
+  })();
+  const settle = (ms) => Promise.race([counted, new Promise((r) => setTimeout(r, ms))]);
+  let cfg = null;
+  window.onload = async function () {
+    try { cfg = await (await fetch("lenses.json", { cache: "no-store" })).json(); } catch (e) { cfg = null; }
+    // a remembered key from an earlier visit goes straight to its lens
+    try {
+      const key = localStorage.getItem("staticrypt_passphrase"), exp = +localStorage.getItem("staticrypt_expiration") || 0;
+      if (cfg && key && (!exp || exp > Date.now())) { const lens = await lensFor(key, cfg); if (lens) { await settle(800); return open(lens, key, false); } }
+    } catch (e) {}
+    showForm();
+  };
+  const toggle = document.getElementById("staticrypt-toggle"), field = document.getElementById("staticrypt-password"), err = document.getElementById("staticrypt-error");
+  toggle.addEventListener("click", function () { const show = field.type === "password"; field.type = show ? "text" : "password"; toggle.textContent = show ? "Hide" : "Show"; field.focus(); });
+  field.addEventListener("input", function () { err.textContent = ""; field.removeAttribute("aria-invalid"); });
+  document.getElementById("staticrypt-form").addEventListener("submit", async function (e) {
+    e.preventDefault();
+    const btn = this.querySelector(".staticrypt-decrypt-button"); btn.disabled = true;
+    let lens = null, key = null;
+    if (cfg && field.value) { key = await deriveKey(field.value, cfg.salt); lens = await lensFor(key, cfg); }
+    if (lens) { await settle(400); return open(lens, key, document.getElementById("staticrypt-remember").checked); }
+    btn.disabled = false; err.textContent = "That password didn’t work. Check it and try again."; field.setAttribute("aria-invalid", "true"); field.select();
+    // diagnostics, only with ?debug in the address: what this page sees (fingerprints are public anyway)
+    if (/[?&]debug/.test(location.search)) {
+      const s = (x) => (x || "—").slice(0, 8);
+      let d = "\nDiagnostics: lenses.json " + (cfg ? "loaded" : "NOT loaded") + (cfg ? ", salt " + s(cfg.salt) + ", stored: " + Object.entries(cfg.lenses).map(([k, v]) => k + " " + s(v)).join(", ") : "");
+      if (cfg && key) d += "\nThis password gives: " + (await Promise.all(Object.keys(cfg.lenses).map(async (k) => k + " " + s(await fingerprint(key, k))))).join(", ") + "; " + field.value.length + " characters";
+      err.style.whiteSpace = "pre-line"; err.textContent += d;
+    }
+  });
+</script>
 </body>
 </html>
