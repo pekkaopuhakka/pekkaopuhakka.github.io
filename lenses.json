@@ -2,6 +2,7 @@
   "salt": "3ffd22497cc3523df0ba7424ebbed079",
   "lenses": {
     "systems": "33f975bfd7237ccba6c78a35d250ad76677125d691f85ccf2a17c3060996290c",
-    "services": "ec2c59d3ffebe1cf685f9c648df6a56e570ffb296314bb7d5d0fdac991d8e55d"
+    "services": "ec2c59d3ffebe1cf685f9c648df6a56e570ffb296314bb7d5d0fdac991d8e55d",
+    "latest": "c8256de30619eb4267aa0d9e468094ff4f2054e03f1bcc4d47d329ed793c6f75"
   }
 }
